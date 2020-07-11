@@ -1,4 +1,4 @@
-// Script modified: Sat July 11, 2020 @ 02:43:00 EDT
+// Script modified: Sat July 11, 2020 @ 04:38:29 EDT
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -12,3 +12,5 @@ app.use('/api/codeTypes', codeTypeRoute);
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
     console.log('connected.')
 );
+
+app.listen(3000);
