@@ -19,15 +19,18 @@ $projectBackendRoot = /usr/etc/apples2apples/api
   \___ 📁 (/source)
        |\__ 📁(/.sh)
        |    |\___ 💾 build.sh
+       |    |\___ 💾 clean.sh
        |    |\___ 💾 flag-available.sh
-       |    \____ 💾 flag-unavailable.sh
-       \__ 📁 (/pagesource)
-           |\___ 📁 (/css)
-           |     \____ 💾 main.css
-           |\___ 📁 (/html)
-           |     \____ 💾 index.html
-           \____ 📁 (/js)
-                 \____ 💾 index.js
+       |    |\___ 💾 flag-unaailable.sh
+       |    \____ 💾 rebuild.sh
+       |\_ 📁 (/pagesource)
+       |   |\___ 📁 (/css)
+       |   |     \____ 💾 main.css
+       |   |\___ 📁 (/html)
+       |   |     \____ 💾 index.html
+       |   \____ 📁 (/js)
+       |         \____ 💾 index.js
+       \____ 💾 a2a.conf
 📁 /etc/httpd
   |\___ 📁 (/sites-available)
   |     \___ 💾 a2a.conf # Apache `.conf` file
