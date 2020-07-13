@@ -1,4 +1,4 @@
-// Script modified: Sat July 11, 2020 @ 09:40:29 EDT
+// Script modified: Mon July 13, 2020 @ 12:44:13 EDT
 const express = require('express');
 const app = express();
 const router = express.Router();
@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 router.post('/', (req, res) => {
     console.log(req);
     var status = 200;
-    reqIp = req.ip;
-    resBody = `Your GET resquest was recieved: ${reqIp}`;
+    var reqIp = req.ip;
+    var resBody = `Your GET resquest was recieved: ${reqIp}`;
     res.status(status).send(resBody);
     console.log(req.body);
 });
@@ -32,7 +32,7 @@ router.get('/:file', (req, res) => {
         console.log("Client request:");
         console.log(req.params.file);
         var status = 200;
-        resBody = `Your GET resquest was recieved: ${ req.params.file}`;
+        var resBody = `Your GET resquest was recieved: ${ req.params.file}`;
         res.status(status).send(resBody);
         console.log("BODY:");
         console.log(req.body);
